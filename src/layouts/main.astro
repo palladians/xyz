@@ -1,0 +1,26 @@
+---
+import "@fontsource-variable/dm-sans";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>You and the Web3 \ Palladians</title>
+	</head>
+	<body class="flex flex-col gap-16 container max-w-[680px] mx-auto my-8 min-w-screen">
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+body {
+  font-family: 'DM Sans Variable', sans-serif;
+  text-align: justify;
+  line-height: 1.75;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+</style>
