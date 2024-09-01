@@ -1,40 +1,38 @@
 ---
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
+import ItemCard from "../components/item-card.astro";
 import MainLayout from "../layouts/main.astro";
 ---
 
 <MainLayout>
    <Header />
     <section class="flex flex-col gap-4 mx-4">
-        <h2>We</h2>
+        <h2 class="text-secondary">We</h2>
         <p class="text-primary">We are a software development collective of open source enthusiasts. Our main mission is to enrich Web3 with user-friendly experiences. We build with stable tools and research cutting-edge technology.</p>
     </section>
     <section class="flex flex-col">
-        <h2 class="mx-4">Products</h2>
-        <a href="https://pallad.co" target="_blank" rel="noopener noreferrer" class="card gap-2 p-4 hover:bg-neutral mt-4">
-            <h3>Pallad</h3>
-            <p class="text-primary">Pallad is a unique Web3 wallet for Mina Protocol. It follows W3C standards for Verifiable Credentials and enables zkApps. The wallet is the result of our combined experience in application development and modern fintech.</p>
-        </a>
-        <div class="card gap-2 p-4 hover:bg-neutral">
-            <h3>Mangan</h3>
-            <p class="text-primary">Mangan is a all-in-one zkApp built on top of Pallad and Mina Protocol to gamify Pallad's user experience and allow earning rewards for the activity. Future releases include social features and multisig.</p>
-        </div>
-        <div class="card gap-2 p-4 hover:bg-neutral">
-            <h3>Klesia</h3>
-            <p class="text-primary">Klesia is a JSON-RPC wrapper over various Mina Protocol tools and APIs to provide best in class experience for Mina Protocol developers. Currently being internal tool for Pallad and Mangan.</p>
-        </div>
+        <h2 class="text-secondary mx-4">Products</h2>
+        <ItemCard title="Pallad" href="https://pallad.co" customClass="mt-4">
+            Pallad is a unique Web3 wallet for Mina Protocol. It follows W3C standards for Verifiable Credentials and enables zkApps. The wallet is the result of our combined experience in application development and modern fintech.
+        </ItemCard>
+        <ItemCard title="Mangan">
+            Mangan is an all-in-one zkApp built on top of Pallad and Mina Protocol to gamify the Pallad user experience and allow you to earn rewards for your activity. Future releases will include social features and multisig.
+        </ItemCard>
+        <ItemCard title="Klesia">
+            Klesia is a JSON-RPC wrapper over various Mina Protocol tools and APIs to provide a best-in-class experience for Mina Protocol developers. It is currently an internal tool for Pallad and Mangan.
+        </ItemCard>
     </section>
     <section class="flex flex-col">
-        <h2 class="mx-4">Open Source</h2>
-        <a href="https://github.com/palladians/mina-js" target="_blank" rel="noopener noreferrer" class="card gap-2 p-4 hover:bg-neutral mt-4">
-            <h3>MinaJS</h3>
-            <p class="text-primary">MinaJS is a library designed to provide type safe interfaces for zkApp developers building on Mina Protocol. It's packed with tools to consume Pallad's Web Connector interface.</p>
-        </a>
+        <h2 class="text-secondary mx-4">Open Source</h2>
+        <ItemCard title="MinaJS" href="https://github.com/palladians/mina-js" customClass="mt-4">
+            MinaJS is a library designed to provide type-safe interfaces for zkApp developers building on top of the Mina protocol. It's packed with tools to consume Pallad's Web Connector interface.
+        </ItemCard>
     </section>
     <section class="flex flex-col mx-4 gap-4">
-        <h2>Next Step</h2>
+        <h2 class="text-secondary">Next Step</h2>
         <p class="text-primary">Book a call today and learn how we can help you build user-friendly Web3 applications that will reach your target audience and drive results.</p>
+        <a href="https://cal.com/palladians" target="_blank" rel="noopener noreferrer" class="text-primary underline">Book a call</a>
     </section>
     <Footer />
 </MainLayout>

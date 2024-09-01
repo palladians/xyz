@@ -4,8 +4,8 @@ export default {
 		themes: [
 			{
 				rosepine: {
-					primary: "#c4a7e7",
-					secondary: "#ebbcba",
+					primary: "#d8c3f1",
+					secondary: "#ffeae9",
 					accent: "#f6c177",
 					neutral: "#1f1d2e",
 					"base-100": "#191724",
