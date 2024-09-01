@@ -11,11 +11,15 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.3",
+		"@astrojs/sitemap": "^3.1.6",
 		"@astrojs/tailwind": "^5.1.0",
+		"@astrolib/seo": "^1.0.0-beta.5",
 		"@fontsource-variable/dm-sans": "^5.0.7",
 		"astro": "^4.15.1",
+		"astro-robots-txt": "^1.0.0",
 		"tailwindcss": "^3.4.10",
-		"typescript": "^5.5.4"
+		"typescript": "^5.5.4",
+		"vanilla-tilt": "^1.8.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3",

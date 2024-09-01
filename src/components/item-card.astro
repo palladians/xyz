@@ -2,7 +2,7 @@
 const { title, href, customClass } = Astro.props;
 ---
 
-<a href={href} class:list={["card gap-2 p-4 hover:bg-neutral", customClass]}>
+<a href={href} target="_blank" rel="noopener noreferrer" class:list={["tilt-card card gap-2 p-4 hover:bg-neutral", customClass]} data-tilt-max="0" data-tilt-glare data-tilt-max-glare="0.2">
     <h3 class="text-secondary">{title}</h3>
     <p class="text-primary">
         <slot />

@@ -9,11 +9,19 @@ import "@fontsource-variable/dm-sans";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>You and the Web3 \ Palladians</title>
+		<meta name="description" content="We are a software development collective of open source enthusiasts. Our main mission is to enrich Web3 with user-friendly experiences." />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 	</head>
 	<body class="flex flex-col gap-16 container max-w-[680px] mx-auto my-8 min-w-screen">
 		<slot />
 	</body>
 </html>
+
+<script>
+import VanillaTilt from 'vanilla-tilt';
+const tiltElements = document.querySelectorAll('.tilt-card')
+VanillaTilt.init(tiltElements as any);
+</script>
 
 <style is:global>
 body {
